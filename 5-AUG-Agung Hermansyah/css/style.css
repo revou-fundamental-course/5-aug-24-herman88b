@@ -3,9 +3,35 @@ form{
     display: block;
     margin-top: 0em;
     padding: 12px;
+    border-radius: 5px;
+
+   
+}
+.bacg,.bacg h3,.be,label{
+    background-color: aqua;
+    color: black;
+
 }
 
-
+main.container{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: aqua;
+}
+.h{
+    text-align: center;
+}
+*{
+background-color: black;
+}
+h3,h1,p{
+    color: aliceblue;
+}
 aside{
     padding: 44px;
 }
@@ -13,14 +39,28 @@ aside{
     text-align: center;
   
 }
+span{
+    color: red;
+}
+.result{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: aqua;
+}
 .button{
     height: 32px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    text-align: center;
 }
 .consi{
 background-color: red;
 color: white;
+cursor: pointer;
 }
 .con{
 background-color: blue;
@@ -35,8 +75,15 @@ input[type=number]{
     border-radius: 4px;
     box-sizing: border-box;
     font-family: poopins, sans-serif;
+    background-color: white;
 }
 footer{
     align-items: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 400px){
+    main{
+        flex-direction: column;
+    }
 }
