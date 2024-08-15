@@ -7,31 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
+   <!-- sebagai header -->
 <header>
     <h1 class="main-title">kalkulator MBI</h1>
 </header>
+<!-- untuk bagian tulisan article -->
+<main>
 <article>
    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse aspernatur ipsa provident obcaecati cupiditate, tempore modi atque quidem itaque nam animi aperiam aliquam earum necessitatibus, reiciendis, porro fugit illo!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos optio excepturi pariatur, magnam aliquam incidunt veritatis deleniti tempore earum blanditiis eligendi nihil neque sint illum, aspernatur quaerat facere ipsa odio.</p>
 </article>
-
+<div class="container">
+    <!-- untuk bagian form -->
 <form>
-    <div>
+    <!-- bagian radio button -->
+    <div class="bacg">     
         <h3>Jenis Kelamin</h3>
-<input type="radio" name="jenisKelamin" id="laki-laki"><label for="laki-laki" value="laki-laki">Laki-Laki</label>
-<input type="radio" name="jenisKelamin" id="perempuan"> <label for="perempuan" value="perempuan">Perempuan</label>
+<input type="radio" name="jenisKelamin" class="be" id="laki-laki"><label for="laki-laki" value="laki-laki">Laki-Laki</label>
+<input type="radio" name="jenisKelamin"  class="be" id="perempuan"> <label for="perempuan" value="perempuan">Perempuan</label>
 </div>
-<div>
-    <h3>Berat Badan</h3>
-    <input type="number"> 
+<!-- ]bagian input -->
+<div class="bacg">
+    <h3>Tinggi badan</h3>
+    <input type="number" id="tb">  <br><span id="Terr"></span>
 
 </div>
-<div>
-    <button class="button con"> Hitung BMI</button>
-    <button class="button consi">Rest</button>
+<div class="bacg">
+    <h3>Berat Badan</h3>
+    <input type="number" id="bb"> <br> <span id="Werr"></span>
+
+</div>
+
+<div class="bacg">
+    <h3>umur</h3>
+    <input type="number" id="uu"><span id="umu"></span>
+
+</div>
+<div class="bacg">
+     <p  class="button con" id="Button"> Hitung</p>
+
+    <button class="button consi" id="rest">Rest</button>
+</div>
+<!-- untukl bagian hasil -->
+<div class="bacg">
+<h3 class="h">Hasil</h3><br>
+<p class="result" id="result"></p>
 </div>
 </form>
 
+
+
+<div class="guest">
 <article>
     <header>
         <h3>From information</h3>
@@ -39,14 +65,15 @@
     </header>
 </article>
 
-<aside>
-    <section>
+<article>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque explicabo dolorem eos repellat dicta ut nobis, ex possimus sequi facere repellendus eaque debitis ipsam voluptas laboriosam soluta itaque doloremque.</p>
-    </section>
-</aside>
+</article>
+</div>
+</div>
 </main>
 <footer>
     <p>made by Agung Hermnasyah</p>
 </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
